@@ -1,4 +1,4 @@
-# Meteostation project
+# Portable meteostation project
 
 Simple meteostation based on ESP8266
 
