@@ -10,7 +10,7 @@ Ingredients:
 - AHT10
 - TP4056
 - 2x resistors (1-10kOm)
-- Li-Ion battery (500 mAh)
+- Li-Ion battery (in my case 500 mAh)
 - Switch
 
 ![photo](https://raw.githubusercontent.com/anarakinson/arduino_meteo_station/main/photo_2024-01-14_15-03-12.jpg)
