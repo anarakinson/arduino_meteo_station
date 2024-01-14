@@ -8,7 +8,7 @@ Ingredients:
 - ESP8266 (NodeMCU)
 - OLED display (128x64)
 - AHT10
-- tp4056
+- TP4056
 - 2x resistors (1-10kOm)
 - Li-Ion battery (500 mAh)
 - Switch
