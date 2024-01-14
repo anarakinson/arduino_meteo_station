@@ -19,11 +19,12 @@ AHTxx aht;
 
 // Battery check
 #define VOLTAGE 3.1  // must be 3.3 it fucks brains
-// пин для считывания напряжения
+// Pin for reading voltage 
+//(it must be connected to plus and minus of battery with two equal resistors 1-10kOm)
 #define ANALOG_PIN A0
-// максимальный заряд аккумулятора
+// Max value of l-ion battery
 float max_v = 4.2;   // with two resistors must be 2.1
-// минимальный заряд аккумулятора
+// Min value of l-ion battery
 float min_v = 3.6; 
 
 
