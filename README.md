@@ -2,4 +2,4 @@
 
 Simple meteostation based on ESP8266
 
-![alt text]([http://url/to/img.png](https://raw.githubusercontent.com/anarakinson/arduino_meteo_station/main/photo_2024-01-14_15-03-12.jpg)https://raw.githubusercontent.com/anarakinson/arduino_meteo_station/main/photo_2024-01-14_15-03-12.jpg)
+![alt text](https://raw.githubusercontent.com/anarakinson/arduino_meteo_station/main/photo_2024-01-14_15-03-12.jpg)https://raw.githubusercontent.com/anarakinson/arduino_meteo_station/main/photo_2024-01-14_15-03-12.jpg)
