@@ -18,7 +18,7 @@ AHTxx aht;
 
 
 // Battery check
-#define VOLTAGE 3.1  // must be 3.3 but it's fucking brains
+#define VOLTAGE 3.1  // must be 3.3 it fucks brains
 // пин для считывания напряжения
 #define ANALOG_PIN A0
 // максимальный заряд аккумулятора
