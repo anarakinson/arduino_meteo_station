@@ -14,4 +14,4 @@ Ingredients:
 - Switch
 
 ![photo](https://raw.githubusercontent.com/anarakinson/arduino_meteo_station/main/photo_2024-01-14_15-03-12.jpg)
-![scheme](https://github.com/anarakinson/arduino_meteo_station/blob/main/Scheme.jpg)
+![scheme](https://github.com/anarakinson/arduino_meteo_station/blob/main/Scheme_v1.jpg)
