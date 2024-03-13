@@ -30,9 +30,9 @@ AHTxx aht;
 //(it must be connected to plus and minus of battery with two equal resistors 1-10kOm)
 #define ANALOG_PIN A0
 // Max value of l-ion battery
-float max_v = 4.2;   // with two resistors must be 2.1
+float max_v = 4.0;   // with two resistors must be 2.1
 // Min value of l-ion battery  
-float min_v = 3.6;
+float min_v = 3.4;
 // Mean value of charge
 float mean_charge[10] = {50, 50, 50, 50, 50, 50, 50, 50, 50, 50};
 
@@ -71,7 +71,7 @@ void loop() {
 
   auto temp = aht.readTemperature();
   auto humid = aht.readHumidity();
-  
+
   // get current voltage
   float sensorValue = analogRead(ANALOG_PIN); //read the A0 pin value
   float voltage = sensorValue * (VOLTAGE / 1023.00); //convert the value to a true voltage.
@@ -93,6 +93,10 @@ void loop() {
 
   Serial.println(String("") + "Temperature(℃):\t" + String(temp) + "℃");
   Serial.println(String("") + "V:\t" + String(voltage) + "\tbat:\t " + battery + "\tSensor:\t" + sensorValue);
+  for (int i = 0; i < 10; ++i) {
+    Serial.print(String(mean_charge[i]) + " ");
+  }
+  Serial.println();
 
 
   /* ----- DISPLAY ----- */
@@ -110,8 +114,8 @@ void loop() {
 
   oled.drawString(10, 2, "V: " + String(voltage));
   int bat_pos = 78;
-  if (battery >= 100) bat_pos = 73;
-  if (battery < 10) bat_pos = 83;
+  if (battery >= 100) bat_pos -= 5;
+  if (battery < 10) bat_pos += 5;
   oled.drawString(bat_pos, 2, String(battery) + "%");
   oled.drawRect(102, 4, 20, 8); 
   oled.drawRect(101, 6, 2, 4); 
